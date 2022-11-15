@@ -88,10 +88,6 @@ public class House extends Building {
     System.out.println(name + " has moved in.");
   }
 
-  public void moveIn(String name, int roomNum){
-    residents.add(name);
-  }
-
   /** Takes in String object representing a name and removes corresponding element from list of residents
    * if name can be found in residents
    * @param name the name of the student who is moving out
