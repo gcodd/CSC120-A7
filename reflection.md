@@ -1,4 +1,13 @@
 Use this file to record your reflection on this assignment.
 
 - Which methods did you decide to `overload`, and why?
+
+    I added two overloaded constructors to each subclass. I did this mostly for the sake of time because other methods I was interested in overloading would have required me to create new class attributes and new methods to initialize those attributes. The first method I added to each class was a default constructor. I did this to make sure none of the class attributes would be "null" if the default constructor was called for any of the subclasses. I also added constructors that took in parameters "name" and "address" to each class, so that objects of each subclass could be created without having to pass the number of floors, hasDiningRoom, or hasElevator into them. These overloaded constructors makes initializing objects of the subclasses much easier, especially if you know the instance only has one floor or does not have an elevator or dining room. I used this type of overloaded constuctor from both the Cafe and Library class in CampusMap.java when initializing objects representing the Campus Center Cafe and Josten Library.
+
 - What worked, what didn't, what advice would you give someone taking this course in the future?
+
+    I got really stuck on details with this assignment, especially when I came across something I really wanted to implement but didnt have the time to include. I wish I had more time with this assignment to add new class attributes and methods to make the subclasses more detailed. I think it would have been cool to add an attribute for a Hashtable in the House class holding values for room number(Integer) and occupancy(Boolean). I could have used this Hashtable in an overloaded moveIn method. I am glad I decided to add two overloaded constructors to each class because I think this improved the overall functionality of my code.
+
+    Another issue I got frustrated with was not being able to call the superclass goToFloor method within my overridden goToFloor methods. It didn't make sense to call the super goToFloor method AFTER checking hasElevator because the method has to ensure the user is in the building and has entered a valid floor number first. It also wouldn't have made since to call it BEFORE because then the message would print before checking hasElevator. Therefore, I had to type out the whole method and insert the code checking for an elevator in between checking the validity of the floor number entered and printing the message. This interfered with the readability of my code.
+
+    I did not collaborate with anyone on this assignment.
